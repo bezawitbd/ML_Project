@@ -6,18 +6,13 @@ from PIL import Image
 
 import os
 import gdown
-import joblib
 
 GESTURE_MODEL_PATH = "gesture_model.pkl"
 
-if not os.path.exists(GESTURE_MODEL_PATH):
-    file_id = "1z4IEuMnmH3QA324dRaJfgzJJnv-LExxb"
-
-    url = f"https://drive.google.com/file/d/1z4IEuMnmH3QA324dRaJfgzJJnv-LExxb/view?usp=sharing"
-
+if not os.path.exists("energy_model.pkl"):
     gdown.download(
-        url,
-        GESTURE_MODEL_PATH,
+        "https://drive.google.com/uc?id=1z4IEuMnmH3QA324dRaJfgzJJnv-LExxb",
+        "energy_model.pkl",
         quiet=False
     )
 
