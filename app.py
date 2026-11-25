@@ -13,7 +13,7 @@ GESTURE_MODEL_PATH = "gesture_model.pkl"
 if not os.path.exists(GESTURE_MODEL_PATH):
     file_id = "1z4IEuMnmH3QA324dRaJfgzJJnv-LExxb"
 
-    url = f"https://drive.google.com/uc?id={file_id}"
+    url = f"https://drive.google.com/file/d/1z4IEuMnmH3QA324dRaJfgzJJnv-LExxb/view?usp=sharing"
 
     gdown.download(
         url,
